@@ -1,3 +1,8 @@
+--Выбрать 10 самых приоритетных городов для следующего магазина
+--Столбцы: Город | Приоритет
+--Приоритет определяется как количество покупателей в городе
+--В городе не должно быть магазина
+
 SELECT TOP 10 City, Count(*) As Count
 FROM Sales.Customer AS SC
 JOIN Person.BusinessEntityAddress AS PBEA ON PBEA.BusinessEntityID = SC.PersonID
