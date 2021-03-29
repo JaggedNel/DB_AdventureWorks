@@ -20,6 +20,7 @@ BEGIN
 	WHERE SSOD.SalesOrderID = @order_id
 	RETURN @RES
 END
+GO
 
  SELECT OrderDate, LastName, FirstName, dbo.mywrite(SalesOrderID)
  FROM Sales.SalesOrderHeader As SSOH
